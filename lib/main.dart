@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:stellaris/HomeScreen.dart';
 
@@ -9,7 +10,7 @@ void main(){
   // Splash ke baad bars ko wapas lane ke liye
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
 
-  runApp(Stellaris());
+  runApp(DevicePreview(builder: (context)=>Stellaris()));
 }
 class Stellaris extends StatelessWidget{
   const Stellaris({super.key});
